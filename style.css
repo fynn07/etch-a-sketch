@@ -128,8 +128,9 @@ body{
     margin-bottom: 30px;
 }
 
-
-
+.reset-container{
+   margin-bottom: 30px; 
+}
 
 .footer{
     position: absolute;

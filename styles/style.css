@@ -1,0 +1,52 @@
+body{
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    font-size: 60px;
+}
+.header p{
+    margin: 30px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px;
+    gap: 20px;
+}
+.content-container .grid-container{
+    display: flex;
+    border: 2px solid black;
+    width: 100vh;
+    height: 65vh;
+}
+.content-container .options-container{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 40vh;
+    height: 65vh;
+}
+
+.footer{
+    position: absolute;
+    background-color:black;
+    color: white;
+    font-size: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

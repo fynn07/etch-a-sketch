@@ -24,7 +24,7 @@ function createGrid(dimensions){
         for(column = 0; column < dimensions; column++){
             const pixelOnGrid = document.createElement('div');
             pixelOnGrid.setAttribute('draggable', false);
-            pixelOnGrid.style.cssText= `background-color: rgb(255, 255, 255, .3); flex: 1 0 ${widthOfPixel}%; margin: 0px; padding: 0px;`;
+            pixelOnGrid.style.cssText= `background-color: rgb(255, 255, 255, .3); flex: 1 0 ${widthOfPixel}%; margin: 0px; padding: 0px; transition:0.1s;`;
             pixelOnGrid.addEventListener('mouseover', (e) => {
                 if(isMouseDown){
                     e.target.style.background = `${color}`;

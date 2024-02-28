@@ -6,6 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <title>Etch A Sketch</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -21,31 +25,32 @@
 
             </div>
             <div class="options-container">
+                <input type="color" id="color-picker" tabindex=-1>
                 <div class="specification-word-container inner-content">
-                    <p>Specifications</p>
+                    <p>SPECIFICATION</p>
                 </div>
                 <div class="color-wheel-container inner-content">
                     <input type="image" src="resources/color-wheel.png" id="color-wheel-image">
                 </div>
                 <div class="color-buttons-container inner-content">
-                    <button>Random Color</button>
-                    <button>Apply Color</button>
+                    <button id="toggle-eraser-button">Toggle Eraser</button>
+                    <button id="apply-color-button">Apply Color</button>
                 </div>
                 <div class="num-tiles-container inner-content">
-                    <p>Number of Tiles</p>
-                    <input type="number">
+                    <p>NUMBER OF TILES</p>
+                    <input type="number" id="number-of-tiles">
                 </div>
 
                 <div class="apply-tile-container inner-content">
-                    <button>Apply Tile</button>
+                    <button id="apply-tile-dimensions">Apply Tile</button>
                 </div>
                 <div class="reset-container inner-content">
-                    <button>Reset</button>
+                    <button id="reset-button">Reset</button>
                 </div>
             </div>
         </div>
         <div class="footer content">
-            <p>Copyright © 2024 Fynn07</p>
+            <p>Copyright © The Odin Project | Fynn07 2024</p>
         </div>
    </div> 
 </body>

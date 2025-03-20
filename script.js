@@ -57,12 +57,18 @@ color_wheel.addEventListener('click', () => {
 
 //Clears the Grid and creates another Grid with the values of the number text box
 let apply_tiles_button = document.querySelector('#apply-tile-dimensions');
-apply_tiles_button.addEventListener('click', () => {
+apply_tiles_button.addEventListener('click', (e) => {
     let dimensions_text = document.querySelector('#number-of-tiles').value;
     if(dimensions_text > 100 || !(dimensions_text % 1 === 0)){
         alert("bad");
         return;
     }
+    e.target.style.cssText = "transition: 0.4s; background-color: green; color: white";
+    grid.style.cssText = "transition: 0.4s; border: 5px solid green;";
+    setTimeout(() => {
+        apply_tiles_button.style.cssText = "transition: 0.4s; background-color: white; color: black";
+        grid.style.cssText = "transition: 0.4s; border: 5px solid black";
+    }, 200);
     clearGrid();
     createGrid(dimensions_text);
 });
@@ -80,6 +86,10 @@ let reset_button = document.querySelector('#reset-button');
 reset_button.addEventListener('click', () => {
     clearGrid();
     createGrid(prev_dimension);
+    grid.style.cssText = "transition: 0.4s; border: 5px solid red";
+    setTimeout(() => {
+        grid.style.cssText = "transition: 0.4s; border: 5px solid black";
+    }, 200)
 })
 
 let eraser_button = document.querySelector("#toggle-eraser-button");

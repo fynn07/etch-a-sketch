@@ -72,6 +72,7 @@ apply_tiles_button.addEventListener('click', (e) => {
     clearGrid();
     createGrid(dimensions_text);
 });
+//test
 
 //test
 //removes every child of Grid, clearing the Grid
